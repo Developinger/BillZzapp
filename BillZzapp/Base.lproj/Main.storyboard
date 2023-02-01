@@ -853,35 +853,35 @@
                                         <rect key="frame" x="0.0" y="0.0" width="378" height="1000"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spotify-square-color-icon" translatesAutoresizingMaskIntoConstraints="NO" id="yUf-DD-Mh3">
-                                                <rect key="frame" x="39" y="28" width="124" height="110"/>
+                                                <rect key="frame" x="51" y="29" width="124" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="amazon-app-logo-6196" translatesAutoresizingMaskIntoConstraints="NO" id="s8e-E2-P0z">
-                                                <rect key="frame" x="39" y="189" width="124" height="110"/>
+                                                <rect key="frame" x="51" y="189" width="124" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="disney-plus-5640" translatesAutoresizingMaskIntoConstraints="NO" id="uWL-F9-jTu">
-                                                <rect key="frame" x="251" y="189" width="106" height="110"/>
+                                                <rect key="frame" x="222" y="189" width="106" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HBO-GO-logo" translatesAutoresizingMaskIntoConstraints="NO" id="3WW-Md-fLO">
-                                                <rect key="frame" x="39" y="360" width="124" height="110"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5f4921b668ecc70004ae7047" translatesAutoresizingMaskIntoConstraints="NO" id="wcR-6h-Rw1">
-                                                <rect key="frame" x="39" y="545" width="124" height="110"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="netflix-app-icon" translatesAutoresizingMaskIntoConstraints="NO" id="dTt-5m-y1a">
-                                                <rect key="frame" x="251" y="28" width="106" height="110"/>
+                                                <rect key="frame" x="52" y="360" width="124" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-apple-tv-500" translatesAutoresizingMaskIntoConstraints="NO" id="kqN-Az-X1J">
-                                                <rect key="frame" x="232" y="348" width="146" height="135"/>
+                                                <rect key="frame" x="203" y="347" width="146" height="136"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="netflix-app-icon" translatesAutoresizingMaskIntoConstraints="NO" id="dTt-5m-y1a">
+                                                <rect key="frame" x="222" y="29" width="106" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5f4921b668ecc70004ae7047" translatesAutoresizingMaskIntoConstraints="NO" id="wcR-6h-Rw1">
+                                                <rect key="frame" x="51" y="540" width="124" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="disney-plus-5640" translatesAutoresizingMaskIntoConstraints="NO" id="NsV-Y6-E8V">
-                                                <rect key="frame" x="252" y="545" width="106" height="110"/>
+                                                <rect key="frame" x="222" y="540" width="106" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                         </subviews>
@@ -909,56 +909,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JnA-5N-JoK" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3959.5419847328244" y="1443.661971830986"/>
-        </scene>
-        <!--Selected Services-->
-        <scene sceneID="p1H-0S-I9y">
-            <objects>
-                <viewController title="Selected Services" id="WJj-Sg-Afe" customClass="ViewController" customModule="BillZzapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pvL-Wl-m2d">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XSa-dN-YPl">
-                                <rect key="frame" x="0.0" y="246.33333333333331" width="393" height="605.66666666666674"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z1I-q0-ma4">
-                                        <rect key="frame" x="6" y="-128.33333333333326" width="381" height="862"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hulu-icon" translatesAutoresizingMaskIntoConstraints="NO" id="P6Q-pV-5hf">
-                                                <rect key="frame" x="31" y="33" width="124" height="110"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple-music-icon" translatesAutoresizingMaskIntoConstraints="NO" id="E2G-Ke-jOS">
-                                                <rect key="frame" x="31" y="632" width="106" height="110"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hulu-icon" translatesAutoresizingMaskIntoConstraints="NO" id="9PY-N3-2ov">
-                                                <rect key="frame" x="257" y="663" width="124" height="110"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hulu-icon" translatesAutoresizingMaskIntoConstraints="NO" id="pdQ-hy-kB1">
-                                                <rect key="frame" x="163" y="33" width="124" height="110"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                </subviews>
-                                <viewLayoutGuide key="contentLayoutGuide" id="mwi-hW-KQR"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="eOO-4G-lGm"/>
-                            </scrollView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="aKZ-yk-18o"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="RqP-IW-pQ5"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="G6E-OE-4tU" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4484.7328244274804" y="636.61971830985919"/>
+            <point key="canvasLocation" x="4149" y="710"/>
         </scene>
     </scenes>
     <resources>
@@ -972,11 +923,9 @@
         <image name="Screenshot 2022-12-06 133028(1)" width="1321" height="498"/>
         <image name="amazon-app-logo-6196" width="128" height="128"/>
         <image name="apple-logo-white" width="803" height="985"/>
-        <image name="apple-music-icon" width="512" height="512"/>
         <image name="checkmark-256" width="256" height="256"/>
         <image name="disney-plus-5640" width="1024" height="1024"/>
         <image name="hand" width="890" height="890"/>
-        <image name="hulu-icon" width="513" height="513"/>
         <image name="icons8-apple-tv-500" width="500" height="500"/>
         <image name="lock" width="79" height="105"/>
         <image name="netflix-app-icon" width="512" height="513"/>
