@@ -13,6 +13,7 @@
 		CE60D4C029689B8200BED7C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE60D4BE29689B8200BED7C1 /* Main.storyboard */; };
 		CE60D4C229689B8C00BED7C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE60D4C129689B8C00BED7C1 /* Assets.xcassets */; };
 		CE60D4C529689B8C00BED7C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE60D4C329689B8C00BED7C1 /* LaunchScreen.storyboard */; };
+		CE9A139A298D8C05007C0234 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A1399298D8C05007C0234 /* SignupViewController.swift */; };
 		CEA7B3AA2968A8DF00C3F155 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA7B3A32968A8DF00C3F155 /* Roboto-Light.ttf */; };
 		CEA7B3AB2968A8DF00C3F155 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA7B3A42968A8DF00C3F155 /* Roboto-Thin.ttf */; };
 		CEA7B3AC2968A8DF00C3F155 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA7B3A52968A8DF00C3F155 /* Roboto-MediumItalic.ttf */; };
@@ -20,6 +21,9 @@
 		CEA7B3AE2968A8DF00C3F155 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA7B3A72968A8DF00C3F155 /* Roboto-Medium.ttf */; };
 		CEA7B3AF2968A8DF00C3F155 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA7B3A82968A8DF00C3F155 /* Roboto-ThinItalic.ttf */; };
 		CEA7B3B02968A8DF00C3F155 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA7B3A92968A8DF00C3F155 /* Roboto-LightItalic.ttf */; };
+		CEF6C8E8298D844300B7297A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEF6C8E7298D844300B7297A /* GoogleService-Info.plist */; };
+		CEF6C8EB298D85A900B7297A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CEF6C8EA298D85A900B7297A /* FirebaseAuth */; };
+		CEF6C8ED298D85A900B7297A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CEF6C8EC298D85A900B7297A /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,7 @@
 		CE60D4C129689B8C00BED7C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE60D4C429689B8C00BED7C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE60D4C629689B8C00BED7C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9A1399298D8C05007C0234 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		CEA7B3A32968A8DF00C3F155 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		CEA7B3A42968A8DF00C3F155 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		CEA7B3A52968A8DF00C3F155 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
@@ -43,6 +48,7 @@
 		CEA7B3B32968A8FA00C3F155 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		CEA7B3B42968A8FA00C3F155 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		CEA7B3B52968A8FA00C3F155 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		CEF6C8E7298D844300B7297A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF6C8EB298D85A900B7297A /* FirebaseAuth in Frameworks */,
+				CEF6C8ED298D85A900B7297A /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,14 +83,15 @@
 		CE60D4B729689B8200BED7C1 /* BillZzapp */ = {
 			isa = PBXGroup;
 			children = (
+				CEF6C8EE298D8A9400B7297A /* ViewControllers */,
 				CEA7B3A22968A8BC00C3F155 /* Font */,
 				CE60D4B829689B8200BED7C1 /* AppDelegate.swift */,
 				CE60D4BA29689B8200BED7C1 /* SceneDelegate.swift */,
-				CE60D4BC29689B8200BED7C1 /* ViewController.swift */,
 				CE60D4BE29689B8200BED7C1 /* Main.storyboard */,
 				CE60D4C129689B8C00BED7C1 /* Assets.xcassets */,
 				CE60D4C329689B8C00BED7C1 /* LaunchScreen.storyboard */,
 				CE60D4C629689B8C00BED7C1 /* Info.plist */,
+				CEF6C8E7298D844300B7297A /* GoogleService-Info.plist */,
 			);
 			path = BillZzapp;
 			sourceTree = "<group>";
@@ -106,6 +115,15 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		CEF6C8EE298D8A9400B7297A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE60D4BC29689B8200BED7C1 /* ViewController.swift */,
+				CE9A1399298D8C05007C0234 /* SignupViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,6 +140,10 @@
 			dependencies = (
 			);
 			name = BillZzapp;
+			packageProductDependencies = (
+				CEF6C8EA298D85A900B7297A /* FirebaseAuth */,
+				CEF6C8EC298D85A900B7297A /* FirebaseFirestore */,
+			);
 			productName = BillZzapp;
 			productReference = CE60D4B529689B8200BED7C1 /* BillZzapp.app */;
 			productType = "com.apple.product-type.application";
@@ -150,6 +172,9 @@
 				Base,
 			);
 			mainGroup = CE60D4AC29689B8200BED7C1;
+			packageReferences = (
+				CEF6C8E9298D85A900B7297A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = CE60D4B629689B8200BED7C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -172,6 +197,7 @@
 				CEA7B3AA2968A8DF00C3F155 /* Roboto-Light.ttf in Resources */,
 				CEA7B3AB2968A8DF00C3F155 /* Roboto-Thin.ttf in Resources */,
 				CEA7B3AF2968A8DF00C3F155 /* Roboto-ThinItalic.ttf in Resources */,
+				CEF6C8E8298D844300B7297A /* GoogleService-Info.plist in Resources */,
 				CEA7B3AC2968A8DF00C3F155 /* Roboto-MediumItalic.ttf in Resources */,
 				CE60D4C029689B8200BED7C1 /* Main.storyboard in Resources */,
 			);
@@ -186,6 +212,7 @@
 			files = (
 				CE60D4BD29689B8200BED7C1 /* ViewController.swift in Sources */,
 				CE60D4B929689B8200BED7C1 /* AppDelegate.swift in Sources */,
+				CE9A139A298D8C05007C0234 /* SignupViewController.swift in Sources */,
 				CE60D4BB29689B8200BED7C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +429,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEF6C8E9298D85A900B7297A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEF6C8EA298D85A900B7297A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEF6C8E9298D85A900B7297A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CEF6C8EC298D85A900B7297A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEF6C8E9298D85A900B7297A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE60D4AD29689B8200BED7C1 /* Project object */;
 }

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>137092334898-59vp9p0e8jhu5ukvbup1u9hp5prj1mm8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.137092334898-59vp9p0e8jhu5ukvbup1u9hp5prj1mm8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDkEmOp2aMbd19Tx8iwFco5SmxsuBtlsAE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>137092334898</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>First-Time.BillZzapp</string>
+	<key>PROJECT_ID</key>
+	<string>billzapp-28946</string>
+	<key>STORAGE_BUCKET</key>
+	<string>billzapp-28946.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:137092334898:ios:b2d8c5666dbad0542c832b</string>
+</dict>
+</plist>
