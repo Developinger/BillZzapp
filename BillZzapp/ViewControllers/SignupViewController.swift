@@ -28,6 +28,7 @@ class SignupViewController: UIViewController {
         Auth.auth().createUser(withEmail: email, password: password)
     }
     
+    Signin
 
     /*
     // MARK: - Navigation
