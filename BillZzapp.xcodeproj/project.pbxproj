@@ -49,6 +49,7 @@
 		CEA7B3B42968A8FA00C3F155 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		CEA7B3B52968A8FA00C3F155 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		CEF6C8E7298D844300B7297A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DCE34E722991662300B95FA4 /* BillZzapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BillZzapp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 		CE60D4B729689B8200BED7C1 /* BillZzapp */ = {
 			isa = PBXGroup;
 			children = (
+				DCE34E722991662300B95FA4 /* BillZzapp.entitlements */,
 				CEF6C8EE298D8A9400B7297A /* ViewControllers */,
 				CEA7B3A22968A8BC00C3F155 /* Font */,
 				CE60D4B829689B8200BED7C1 /* AppDelegate.swift */,
@@ -358,6 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BillZzapp/BillZzapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -385,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BillZzapp/BillZzapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

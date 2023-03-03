@@ -488,8 +488,8 @@
                                     <color key="baseBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BillZapp Change" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="22" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PY9-t7-evo">
-                                <rect key="frame" x="-26" y="119" width="443" height="71"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BillZapp" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="22" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PY9-t7-evo">
+                                <rect key="frame" x="84" y="119" width="223" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -995,9 +995,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10864299" translatesAutoresizingMaskIntoConstraints="NO" id="EfI-Df-nCC">
-                                <rect key="frame" x="-108" y="-238" width="610" height="1614"/>
+                                <rect key="frame" x="-109" y="-424" width="610" height="1614"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="_tmp-63e6980199fe9_PSPI17" translatesAutoresizingMaskIntoConstraints="NO" id="hXM-Wi-7oA">
+                                <rect key="frame" x="-87" y="69" width="545" height="301"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="UZj-wN-Xn5"/>
+                                    <constraint firstAttribute="width" constant="720" id="gYa-7T-vOG"/>
+                                </constraints>
+                            </imageView>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="geb-7U-rKn">
+                                <rect key="frame" x="0.0" y="769" width="393" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Dashboard" image="circle.grid.2x2.fill" catalog="system" selectedImage="circle.grid.2x2.fill" id="nfs-ZA-8Xb"/>
+                                    <tabBarItem title="Recurring" image="calendar" catalog="system" selectedImage="circle.grid.2x2.fill" id="Hbx-TM-eLd"/>
+                                    <tabBarItem title="Bill Splitter" image="dollarsign.square.fill" catalog="system" selectedImage="circle.grid.2x2.fill" id="0lU-SO-iFy"/>
+                                    <tabBarItem title="Transactions" image="magnifyingglass" catalog="system" selectedImage="dollarsign" id="YOc-Je-tud"/>
+                                    <tabBarItem title="Settings" image="gearshape.fill" catalog="system" selectedImage="dollarsign" id="Cty-tF-vl0"/>
+                                </items>
+                            </tabBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BillZappButton1" translatesAutoresizingMaskIntoConstraints="NO" id="hYL-JC-0j1">
+                                <rect key="frame" x="43" y="355" width="306" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BillZappButton1" translatesAutoresizingMaskIntoConstraints="NO" id="uA3-Yg-NPL">
+                                <rect key="frame" x="43" y="621" width="306" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BillZappButton1" translatesAutoresizingMaskIntoConstraints="NO" id="Dr2-Ez-Gsy">
+                                <rect key="frame" x="43" y="486" width="306" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Q9V-vK-LRA"/>
@@ -1007,7 +1038,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="whs-OF-YKA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4949" y="710"/>
+            <point key="canvasLocation" x="4948.8549618320612" y="709.85915492957747"/>
         </scene>
     </scenes>
     <resources>
@@ -1016,6 +1047,7 @@
         <image name="5f4921b668ecc70004ae7047" width="360" height="360"/>
         <image name="7611770" width="512" height="512"/>
         <image name="Amazon" width="128" height="128"/>
+        <image name="BillZappButton1" width="330" height="119"/>
         <image name="Disney" width="1024" height="1024"/>
         <image name="FinishedProductUI" width="1080" height="1080"/>
         <image name="HBO" width="512" height="512"/>
@@ -1024,11 +1056,18 @@
         <image name="Screenshot 2022-12-06 133028(1)" width="1321" height="498"/>
         <image name="Spotify" width="512" height="512"/>
         <image name="Tubi" width="512" height="512"/>
+        <image name="_tmp-63e6980199fe9_PSPI17" width="776" height="588"/>
         <image name="apple-logo-white" width="803" height="985"/>
+        <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="checkmark-256" width="256" height="256"/>
+        <image name="circle.grid.2x2.fill" catalog="system" width="128" height="111"/>
+        <image name="dollarsign" catalog="system" width="89" height="128"/>
+        <image name="dollarsign.square.fill" catalog="system" width="128" height="114"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
         <image name="hand" width="890" height="890"/>
         <image name="icons8-apple-tv-500" width="500" height="500"/>
         <image name="lock" width="79" height="105"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="papers.co-vy79-circle-purple-simple-minimal-pattern-background-41-iphone-wallpaper" width="1125" height="2436"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
