@@ -75,6 +75,9 @@
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="JF9-sn-lMY" kind="show" id="ZsF-lm-4oy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKd-4Y-lsk">
                                 <rect key="frame" x="46" y="623" width="300" height="54"/>
@@ -211,6 +214,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="createUser:" destination="JF9-sn-lMY" eventType="touchUpInside" id="fXn-1c-bjl"/>
+                                    <segue destination="pml-nU-Epa" kind="show" id="5dc-un-YQN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="22" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mwf-xa-4rF">
@@ -484,8 +488,8 @@
                                     <color key="baseBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BillZapp" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="22" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PY9-t7-evo">
-                                <rect key="frame" x="14" y="119" width="363" height="71"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BillZapp Change" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="22" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PY9-t7-evo">
+                                <rect key="frame" x="-26" y="119" width="443" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -833,11 +837,11 @@
             <objects>
                 <viewController title="Selected Services" id="pgK-6W-KcM" customClass="ViewController" customModule="BillZzapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QgI-54-GI3">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10864299" translatesAutoresizingMaskIntoConstraints="NO" id="jaf-aW-a8g">
-                                <rect key="frame" x="-115" y="-219" width="610" height="1614"/>
+                                <rect key="frame" x="-107" y="-277" width="610" height="1614"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
                             </imageView>
@@ -856,19 +860,22 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVy-e6-0FD">
                                         <rect key="frame" x="0.0" y="0.0" width="378" height="1000"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spotify-square-color-icon" translatesAutoresizingMaskIntoConstraints="NO" id="yUf-DD-Mh3">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Spotify" translatesAutoresizingMaskIntoConstraints="NO" id="yUf-DD-Mh3">
                                                 <rect key="frame" x="51" y="29" width="124" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                </accessibility>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="amazon-app-logo-6196" translatesAutoresizingMaskIntoConstraints="NO" id="s8e-E2-P0z">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Amazon" translatesAutoresizingMaskIntoConstraints="NO" id="s8e-E2-P0z">
                                                 <rect key="frame" x="51" y="189" width="124" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="disney-plus-5640" translatesAutoresizingMaskIntoConstraints="NO" id="uWL-F9-jTu">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Disney" translatesAutoresizingMaskIntoConstraints="NO" id="uWL-F9-jTu">
                                                 <rect key="frame" x="222" y="189" width="106" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HBO-GO-logo" translatesAutoresizingMaskIntoConstraints="NO" id="3WW-Md-fLO">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HBO" translatesAutoresizingMaskIntoConstraints="NO" id="3WW-Md-fLO">
                                                 <rect key="frame" x="52" y="360" width="124" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -876,7 +883,7 @@
                                                 <rect key="frame" x="203" y="347" width="146" height="136"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="netflix-app-icon" translatesAutoresizingMaskIntoConstraints="NO" id="dTt-5m-y1a">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Netflix" translatesAutoresizingMaskIntoConstraints="NO" id="dTt-5m-y1a">
                                                 <rect key="frame" x="222" y="29" width="106" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -884,7 +891,7 @@
                                                 <rect key="frame" x="51" y="540" width="124" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="disney-plus-5640" translatesAutoresizingMaskIntoConstraints="NO" id="NsV-Y6-E8V">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tubi" translatesAutoresizingMaskIntoConstraints="NO" id="NsV-Y6-E8V">
                                                 <rect key="frame" x="222" y="540" width="106" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -918,15 +925,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Rhi-g6-X81"/>
+                    <connections>
+                        <outlet property="spotify" destination="yUf-DD-Mh3" id="QAH-Sa-TYj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JnA-5N-JoK" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4149" y="710"/>
+            <point key="canvasLocation" x="4148.8549618320612" y="709.85915492957747"/>
         </scene>
-        <!--Home Screen-->
+        <!--Recurring Subscriptions-->
         <scene sceneID="u2w-qr-ebU">
             <objects>
-                <viewController title="Verify Email Screen" id="1gp-f6-18w" userLabel="Home Screen" customClass="ViewController" customModule="BillZzapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Recurring Subscriptions" id="1gp-f6-18w" userLabel="Recurring Subscriptions" customClass="ViewController" customModule="BillZzapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7jh-CR-Zfg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -976,26 +986,50 @@
             </objects>
             <point key="canvasLocation" x="4148.8549618320612" y="-2.1126760563380285"/>
         </scene>
+        <!--Login Screen-->
+        <scene sceneID="5xK-sl-Grh">
+            <objects>
+                <viewController title="Login Screen" id="MA3-ZD-Dhf" customClass="ViewController" customModule="BillZzapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oi8-TQ-5tg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10864299" translatesAutoresizingMaskIntoConstraints="NO" id="EfI-Df-nCC">
+                                <rect key="frame" x="-108" y="-238" width="610" height="1614"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Q9V-vK-LRA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KjG-hk-4l3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="whs-OF-YKA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4949" y="710"/>
+        </scene>
     </scenes>
     <resources>
         <image name="10864299" width="1125" height="2436"/>
         <image name="394-3944779_yahoo-mail-logo-png-logo-yahoo-mail-png.png-removebg" width="820" height="615"/>
         <image name="5f4921b668ecc70004ae7047" width="360" height="360"/>
         <image name="7611770" width="512" height="512"/>
+        <image name="Amazon" width="128" height="128"/>
+        <image name="Disney" width="1024" height="1024"/>
         <image name="FinishedProductUI" width="1080" height="1080"/>
-        <image name="HBO-GO-logo" width="512" height="512"/>
+        <image name="HBO" width="512" height="512"/>
         <image name="HD-wallpaper-gradient-purple-blue-w-backgrounds-desings-other-patterns-solid" width="800" height="1422"/>
+        <image name="Netflix" width="512" height="513"/>
         <image name="Screenshot 2022-12-06 133028(1)" width="1321" height="498"/>
-        <image name="amazon-app-logo-6196" width="128" height="128"/>
+        <image name="Spotify" width="512" height="512"/>
+        <image name="Tubi" width="512" height="512"/>
         <image name="apple-logo-white" width="803" height="985"/>
         <image name="checkmark-256" width="256" height="256"/>
-        <image name="disney-plus-5640" width="1024" height="1024"/>
         <image name="hand" width="890" height="890"/>
         <image name="icons8-apple-tv-500" width="500" height="500"/>
         <image name="lock" width="79" height="105"/>
-        <image name="netflix-app-icon" width="512" height="513"/>
         <image name="papers.co-vy79-circle-purple-simple-minimal-pattern-background-41-iphone-wallpaper" width="1125" height="2436"/>
-        <image name="spotify-square-color-icon" width="512" height="512"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
