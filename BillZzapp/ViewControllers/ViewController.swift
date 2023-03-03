@@ -7,18 +7,27 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+
+
+class ViewController: UIViewController {
+    let spotifyButton = UIImage(named: "Spotify")
     
-    
-    
-    @IBOutlet weak var heading: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
         
     }
+    
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        let tappedImage = tapGestureRecognizer.view as! UIImageView
 
+        // Your action
+    }
 
+    
 }
+
 
