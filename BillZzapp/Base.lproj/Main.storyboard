@@ -1022,12 +1022,12 @@
                                 <rect key="frame" x="43" y="355" width="306" height="163"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BillZappButton1" translatesAutoresizingMaskIntoConstraints="NO" id="Dr2-Ez-Gsy">
-                                <rect key="frame" x="43" y="485" width="306" height="163"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BillZappButton1" translatesAutoresizingMaskIntoConstraints="NO" id="uA3-Yg-NPL">
                                 <rect key="frame" x="43" y="621" width="306" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BillZappButton1" translatesAutoresizingMaskIntoConstraints="NO" id="Dr2-Ez-Gsy">
+                                <rect key="frame" x="43" y="486" width="306" height="163"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
