@@ -43,7 +43,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="HD-wallpaper-gradient-purple-blue-w-backgrounds-desings-other-patterns-solid" translatesAutoresizingMaskIntoConstraints="NO" id="C3d-DU-QEi">
-                                <rect key="frame" x="-37" y="-50" width="485" height="952"/>
+                                <rect key="frame" x="-37" y="-520" width="800" height="1422"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="485" id="yyB-gp-NcN"/>
                                 </constraints>
@@ -416,30 +416,6 @@
                                 <rect key="frame" x="0.0" y="-109" width="405" height="1071"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSW-MA-sh2">
-                                <rect key="frame" x="58" y="307" width="278" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="dynamic">
-                                    <backgroundConfiguration key="background" cornerRadius="10" strokeWidth="1" strokeOutset="0.0">
-                                        <color key="strokeColor" systemColor="labelColor"/>
-                                    </backgroundConfiguration>
-                                    <attributedString key="attributedTitle"/>
-                                    <color key="baseBackgroundColor" red="0.74149903564742115" green="0.72117170974576827" blue="0.73130900341555116" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWT-iR-Wlu">
-                                <rect key="frame" x="53" y="301" width="274" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
-                                    <backgroundConfiguration key="background" cornerRadius="10">
-                                        <color key="strokeColor" systemColor="labelColor"/>
-                                    </backgroundConfiguration>
-                                    <attributedString key="attributedTitle"/>
-                                    <color key="baseBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6g4-1B-ogQ">
                                 <rect key="frame" x="61" y="426" width="278" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -496,6 +472,14 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="-2"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Shadow" translatesAutoresizingMaskIntoConstraints="NO" id="DjO-qw-V7a">
+                                <rect key="frame" x="55" y="217" width="284" height="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bg" translatesAutoresizingMaskIntoConstraints="NO" id="bry-Tu-usf">
+                                <rect key="frame" x="46" y="204" width="284" height="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ijA-5B-Sc6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -919,6 +903,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Continue">
                                     <color key="baseForegroundColor" systemColor="systemGrayColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="MA3-ZD-Dhf" kind="show" id="Uu5-o7-0yE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ufU-dW-U4O"/>
@@ -1006,18 +993,6 @@
                                     <constraint firstAttribute="width" constant="720" id="gYa-7T-vOG"/>
                                 </constraints>
                             </imageView>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="geb-7U-rKn">
-                                <rect key="frame" x="0.0" y="769" width="393" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Dashboard" image="circle.grid.2x2.fill" catalog="system" selectedImage="circle.grid.2x2.fill" id="nfs-ZA-8Xb"/>
-                                    <tabBarItem title="Recurring" image="calendar" catalog="system" selectedImage="circle.grid.2x2.fill" id="Hbx-TM-eLd"/>
-                                    <tabBarItem title="Bill Splitter" image="dollarsign.square.fill" catalog="system" selectedImage="circle.grid.2x2.fill" id="0lU-SO-iFy"/>
-                                    <tabBarItem title="Transactions" image="magnifyingglass" catalog="system" selectedImage="dollarsign" id="YOc-Je-tud"/>
-                                    <tabBarItem title="Settings" image="gearshape.fill" catalog="system" selectedImage="dollarsign" id="Cty-tF-vl0"/>
-                                </items>
-                            </tabBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BillZappButton1" translatesAutoresizingMaskIntoConstraints="NO" id="hYL-JC-0j1">
                                 <rect key="frame" x="43" y="355" width="306" height="163"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1030,45 +1005,136 @@
                                 <rect key="frame" x="43" y="486" width="306" height="163"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BillZapp Bill Splitter Rectangle Icon" translatesAutoresizingMaskIntoConstraints="NO" id="Zmg-5p-WIW">
+                                <rect key="frame" x="173" y="131" width="204" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Split with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Rd-Gt-7lh">
+                                <rect key="frame" x="237" y="102" width="76" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Bill:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPD-Li-v0O">
+                                <rect key="frame" x="84" y="102" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Bill Amount:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lKW-dI-65d">
+                                <rect key="frame" x="73" y="131" width="146" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2n-k4-xXS">
+                                <rect key="frame" x="84" y="193" width="97" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.66459337269999996" green="0.63059615349999998" blue="0.94233819210000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Split Now">
+                                    <color key="baseForegroundColor" red="0.76862745098039209" green="0.47058823529411764" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vecteezy_math-sign-icon-design_9267701_465 1" translatesAutoresizingMaskIntoConstraints="NO" id="EUj-sH-1XR">
+                                <rect key="frame" x="320" y="288" width="26" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqb-Hr-Yea">
+                                <rect key="frame" x="238" y="274" width="74" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Ellipse 4" title=""/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0Xe-Pe-SQO">
+                                <rect key="frame" x="255" y="189" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.72744244339999997" green="0.48471802470000003" blue="0.96867102380000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DWN-F1-JmB">
+                                <rect key="frame" x="255" y="237" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.72744244339999997" green="0.48471802470000003" blue="0.96867102380000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DoS-Qs-iRm">
+                                <rect key="frame" x="255" y="141" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.72744244339999997" green="0.48471802470000003" blue="0.96867102380000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5z-R0-b75">
+                                <rect key="frame" x="259" y="269" width="53" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="44"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Q9V-vK-LRA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="opS-Em-UUF"/>
                     <navigationItem key="navigationItem" id="KjG-hk-4l3"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="whs-OF-YKA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5875.5725190839694" y="709.85915492957747"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0wL-t8-XSy">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="27e-Zd-Own" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xya-W2-78C">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MA3-ZD-Dhf" kind="relationship" relationship="viewControllers" id="kVW-pM-EYu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xrb-hI-uB3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4948.8549618320612" y="709.85915492957747"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Uu5-o7-0yE"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="10864299" width="1125" height="2436"/>
         <image name="394-3944779_yahoo-mail-logo-png-logo-yahoo-mail-png.png-removebg" width="820" height="615"/>
         <image name="5f4921b668ecc70004ae7047" width="360" height="360"/>
         <image name="7611770" width="512" height="512"/>
         <image name="Amazon" width="128" height="128"/>
+        <image name="Bg" width="376" height="117"/>
+        <image name="BillZapp Bill Splitter Rectangle Icon" width="86" height="255"/>
         <image name="BillZappButton1" width="330" height="119"/>
         <image name="Disney" width="1024" height="1024"/>
+        <image name="Ellipse 4" width="50" height="50"/>
         <image name="FinishedProductUI" width="1080" height="1080"/>
         <image name="HBO" width="512" height="512"/>
         <image name="HD-wallpaper-gradient-purple-blue-w-backgrounds-desings-other-patterns-solid" width="800" height="1422"/>
         <image name="Netflix" width="512" height="513"/>
         <image name="Screenshot 2022-12-06 133028(1)" width="1321" height="498"/>
+        <image name="Shadow" width="377" height="118"/>
         <image name="Spotify" width="512" height="512"/>
         <image name="Tubi" width="512" height="512"/>
         <image name="_tmp-63e6980199fe9_PSPI17" width="776" height="588"/>
         <image name="apple-logo-white" width="803" height="985"/>
-        <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="checkmark-256" width="256" height="256"/>
-        <image name="circle.grid.2x2.fill" catalog="system" width="128" height="111"/>
-        <image name="dollarsign" catalog="system" width="89" height="128"/>
-        <image name="dollarsign.square.fill" catalog="system" width="128" height="114"/>
-        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
         <image name="hand" width="890" height="890"/>
         <image name="icons8-apple-tv-500" width="500" height="500"/>
         <image name="lock" width="79" height="105"/>
-        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="papers.co-vy79-circle-purple-simple-minimal-pattern-background-41-iphone-wallpaper" width="1125" height="2436"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="vecteezy_math-sign-icon-design_9267701_465 1" width="186.5" height="75.5"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

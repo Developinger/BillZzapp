@@ -19,9 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Auth.auth().useEmulator(withHost: "localhost", port: 9099)
         return true
     }
-    
-    Signinwith
-
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
