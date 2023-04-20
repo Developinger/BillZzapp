@@ -1150,6 +1150,9 @@
                                                                     <segment title="20%"/>
                                                                     <segment title="Custom"/>
                                                                 </segments>
+                                                                <connections>
+                                                                    <action selector="TipValueChanger:" destination="gGp-Cm-Gzl" eventType="valueChanged" id="QCp-Z2-ykd"/>
+                                                                </connections>
                                                             </segmentedControl>
                                                         </subviews>
                                                     </stackView>
@@ -1163,6 +1166,9 @@
                                                                     <constraint firstAttribute="width" constant="325" id="1G4-xF-K0L"/>
                                                                 </constraints>
                                                                 <color key="minimumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <connections>
+                                                                    <action selector="SliderValue:" destination="gGp-Cm-Gzl" eventType="valueChanged" id="U3b-eG-ORb"/>
+                                                                </connections>
                                                             </slider>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c98-n5-4xy">
                                                                 <rect key="frame" x="152.33333333333334" y="45" width="20.333333333333343" height="36"/>
@@ -1281,6 +1287,9 @@
                                                     </attributedString>
                                                     <color key="baseBackgroundColor" red="0.72763413190000004" green="0.48294907809999998" blue="0.96867114310000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="Calcuate:" destination="gGp-Cm-Gzl" eventType="touchUpInside" id="oMm-mM-Sej"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1305,8 +1314,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="BillTotalBeforeTip" destination="CMX-g8-9tA" id="Mdo-8w-nqU"/>
                         <outlet property="BottomBox" destination="NNE-A1-tHM" id="lJq-s4-6e1"/>
+                        <outlet property="CalculateButton" destination="mrE-nT-Ws3" id="xbz-rk-rdH"/>
+                        <outlet property="ResetButton" destination="TZG-Do-vxp" id="Ha3-70-HpD"/>
                         <outlet property="Slider" destination="ZWH-yy-E3E" id="gqk-Dh-PAl"/>
+                        <outlet property="SubTotalLabel" destination="VGv-aR-Mvn" id="ttF-Kn-a7r"/>
+                        <outlet property="TipAmount" destination="i6w-9l-OaS" id="Ocx-Lt-U83"/>
+                        <outlet property="TipSliderLabelChange" destination="c98-n5-4xy" id="gQR-Of-QF0"/>
                         <outlet property="TopBox" destination="gvi-n2-cgZ" id="EUa-vT-KP1"/>
                     </connections>
                 </viewController>
