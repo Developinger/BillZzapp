@@ -20,12 +20,14 @@ class TipCalculatorViewController: UIViewController {
     @IBOutlet weak var TopBox: UIView!
     @IBOutlet weak var BottomBox: UIView!
     @IBOutlet weak var Slider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         TopBox.layer.cornerRadius = 23
         BottomBox.layer.cornerRadius = 23
         Slider.isHidden = true
         value = 15
+        TipSliderLabelChange.text = "15"
         
         // Do any additional setup after loading the view.
     }
@@ -56,23 +58,30 @@ class TipCalculatorViewController: UIViewController {
     }
     
     @IBAction func Calcuate(_ sender: Any) {
-        if let subtotal = Double(BillTotalBeforeTip.text ?? ""), let tipPercent = Double(SliderValueChange.text ?? "") {
+        if let subtotal = Double(BillTotalBeforeTip.text ?? ""), let tipPercent = Double(TipSliderLabelChange.text ?? "") {
                 let tipAmount = subtotal * tipPercent / 100
-                TipAmount.text = String(format: "$%.2f", tipAmount)
+                TipAmount.text = "$" + String(format: "%.2f", tipAmount)
                 
-                updateTotal()
             }
+        
+//        guard let BeforeTip = Double(BillTotalBeforeTip.text ?? ""),
+//              let tipAmount = Double(TipAmount.text ?? "") else {
+//            return
+//        }
+        let subTotalPt2 = Double(BillTotalBeforeTip.text ?? "")
+        let tipPercentPt2 = Double(TipSliderLabelChange.text ?? "")
+        
+        let tipAmountPt2 = subTotalPt2! * tipPercentPt2! / 100
+        let total =  tipAmountPt2 + subTotalPt2!
+        
+        SubTotalLabel.text = String(format: "$%.2f", total  )
+      //  updateTotal()
+
         }
 
-        func updateTotal() {
-            guard let BeforeTip = Double(SubTotalBeforeTax.text ?? ""),
-                  let tipAmount = Double(TipAmount.text ?? "") else {
-                return
-            }
-            let total = BeforeTip + tipAmount
-            
-            subTotal.text = String(format: "%.2f", total)
-    }
+//        func updateTotal() {
+//
+//    }
     @IBAction func SliderValue(_ sender: UISlider) {
         TipSliderLabelChange.text = "\(Int(sender.value))"
     }
