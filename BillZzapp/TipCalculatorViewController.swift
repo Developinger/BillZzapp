@@ -9,7 +9,7 @@ import UIKit
 
 class TipCalculatorViewController: UIViewController {
 
-    var value:Int = 15
+    var value:Int = 0
     @IBOutlet weak var BillTotalBeforeTip: UITextField!
 
     @IBOutlet weak var SubTotalLabel: UILabel!
@@ -20,12 +20,14 @@ class TipCalculatorViewController: UIViewController {
     @IBOutlet weak var TopBox: UIView!
     @IBOutlet weak var BottomBox: UIView!
     @IBOutlet weak var Slider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         TopBox.layer.cornerRadius = 23
         BottomBox.layer.cornerRadius = 23
         Slider.isHidden = true
         value = 15
+        TipSliderLabelChange.text = "15"
         
         // Do any additional setup after loading the view.
     }
