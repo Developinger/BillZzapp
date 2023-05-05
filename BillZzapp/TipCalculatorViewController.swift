@@ -12,6 +12,7 @@ class TipCalculatorViewController: UIViewController {
     var value:Int = 0
     @IBOutlet weak var BillTotalBeforeTip: UITextField!
 
+    @IBOutlet weak var tipSegmentedControl: UISegmentedControl!
     @IBOutlet weak var SubTotalLabel: UILabel!
     @IBOutlet weak var CalculateButton: UIButton!
     @IBOutlet weak var ResetButton: UIButton!
@@ -28,6 +29,7 @@ class TipCalculatorViewController: UIViewController {
         Slider.isHidden = true
         value = 15
         TipSliderLabelChange.text = "15"
+        resetAllValues()
         
         // Do any additional setup after loading the view.
     }
@@ -55,6 +57,21 @@ class TipCalculatorViewController: UIViewController {
             Slider.value = Float(value)
            
         }
+    }
+    
+    @IBAction func resetValuesButton(_ sender: UIButton) {
+        resetAllValues()
+    }
+    
+    func resetAllValues() {
+        BillTotalBeforeTip.text = ""
+        SubTotalLabel.text = "$0.00"
+        TipAmount.text = "$0.00"
+        TipSliderLabelChange.text = "15"
+        Slider.isHidden = true
+        Slider.value = 15.0
+        value = 15
+        tipSegmentedControl.selectedSegmentIndex = 0
     }
     
     @IBAction func Calcuate(_ sender: Any) {

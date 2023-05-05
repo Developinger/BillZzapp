@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gGp-Cm-Gzl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QIG-Zg-ZvM">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -973,10 +973,10 @@
             </objects>
             <point key="canvasLocation" x="4148.8549618320612" y="-2.1126760563380285"/>
         </scene>
-        <!--Login Screen-->
+        <!--BillSplitter-->
         <scene sceneID="5xK-sl-Grh">
             <objects>
-                <viewController title="Login Screen" id="MA3-ZD-Dhf" customClass="ViewController" customModule="BillZzapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="BillSplitter" id="MA3-ZD-Dhf" customClass="BillSplitterViewController" customModule="BillZzapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oi8-TQ-5tg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1104,12 +1104,17 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="R69-Mm-EsT">
                                 <rect key="frame" x="24" y="59" width="345" height="759"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8I-Fg-Sob">
-                                        <rect key="frame" x="40.666666666666657" y="0.0" width="263.66666666666674" height="49"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCg-8C-XdU">
+                                        <rect key="frame" x="85.000000000000014" y="0.0" width="175.33333333333337" height="32.333333333333336"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8I-Fg-Sob">
+                                                <rect key="frame" x="0.0" y="0.0" width="175.33333333333334" height="32.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvi-n2-cgZ">
                                         <rect key="frame" x="0.0" y="70" width="345" height="262.66666666666669"/>
                                         <subviews>
@@ -1272,6 +1277,9 @@
                                                     </attributedString>
                                                     <color key="baseBackgroundColor" red="0.72763413190000004" green="0.48294907809999998" blue="0.96867114310000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="resetValuesButton:" destination="gGp-Cm-Gzl" eventType="touchUpInside" id="bbF-TZ-KLO"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrE-nT-Ws3">
                                                 <rect key="frame" x="0.0" y="81" width="179.66666666666666" height="40.666666666666657"/>
@@ -1298,7 +1306,6 @@
                                     <constraint firstItem="gvi-n2-cgZ" firstAttribute="leading" secondItem="NNE-A1-tHM" secondAttribute="leading" id="DGl-40-dcq"/>
                                     <constraint firstItem="gvi-n2-cgZ" firstAttribute="leading" secondItem="R69-Mm-EsT" secondAttribute="leading" id="fZO-RK-BaI"/>
                                     <constraint firstItem="NNE-A1-tHM" firstAttribute="top" secondItem="R69-Mm-EsT" secondAttribute="top" constant="353.66666666666674" id="geN-FP-Hdo"/>
-                                    <constraint firstItem="gvi-n2-cgZ" firstAttribute="top" secondItem="s8I-Fg-Sob" secondAttribute="bottom" constant="21" id="tYf-RR-Gwt"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -1323,11 +1330,99 @@
                         <outlet property="TipAmount" destination="i6w-9l-OaS" id="Ocx-Lt-U83"/>
                         <outlet property="TipSliderLabelChange" destination="c98-n5-4xy" id="gQR-Of-QF0"/>
                         <outlet property="TopBox" destination="gvi-n2-cgZ" id="EUa-vT-KP1"/>
+                        <outlet property="tipSegmentedControl" destination="V5x-GX-bib" id="yfs-dS-BGK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kng-lu-aZl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6606.8702290076335" y="709.85915492957747"/>
+        </scene>
+        <!--Settings Table View Controller-->
+        <scene sceneID="8Fk-G4-xen">
+            <objects>
+                <tableViewController id="FuM-Iq-TRG" customClass="SettingsTableViewController" customModule="BillZzapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="LDX-vy-x0Q">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileCell" id="Ull-Iv-FZG" customClass="ProfileTableViewCell" customModule="BillZzapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ull-Iv-FZG" id="ME4-rh-252" customClass="ProfileTableViewCell" customModule="BillZzapp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="MJy-wr-aPg" kind="show" identifier="profile" id="fae-Ld-JkK"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BudgetCell" id="BRK-j5-SSx" customClass="BudgetTableViewCell" customModule="BillZzapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="93.666667938232422" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BRK-j5-SSx" id="WIr-Ih-SU1" customClass="BudgetTableViewCell" customModule="BillZzapp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LinkAccountsCell" id="bCp-Ii-gNZ" customClass="LinkAccountsTableViewCell" customModule="BillZzapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="137.33333587646484" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bCp-Ii-gNZ" id="c3E-0X-l8h">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationsAndAlertsCell" id="FXG-3G-jey" customClass="NotificationsAndAlertsTableViewCell" customModule="BillZzapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="181.00000381469727" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FXG-3G-jey" id="G2g-4m-9qj">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HelpAndPrivacyCell" id="k5k-dB-Hxb" customClass="HelpAndPrivacyTableViewCell" customModule="BillZzapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="224.66667175292969" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k5k-dB-Hxb" id="klL-sh-KbS">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AboutOwnerCell" id="w1f-QQ-asr" customClass="AboutOwnersTableViewCell" customModule="BillZzapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="268.33333969116211" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w1f-QQ-asr" id="fqu-eg-nzQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FuM-Iq-TRG" id="LTh-cU-8df"/>
+                            <outlet property="delegate" destination="FuM-Iq-TRG" id="Ayg-ic-3BZ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="fnu-kX-Yxy"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SHC-3g-KkX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8278.6259541984728" y="709.85915492957747"/>
+        </scene>
+        <!--About Owner Details View Controller-->
+        <scene sceneID="cTL-aI-6Gw">
+            <objects>
+                <viewController id="Mle-Uq-qIs" customClass="AboutOwnerDetailsViewController" customModule="BillZzapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ajX-AC-8iw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="XmZ-gy-2Pu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w1b-7i-T9A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8772" y="1361"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="0wL-t8-XSy">
@@ -1341,15 +1436,111 @@
                     </tabBar>
                     <connections>
                         <segue destination="MA3-ZD-Dhf" kind="relationship" relationship="viewControllers" id="kVW-pM-EYu"/>
+                        <segue destination="QIG-Zg-ZvM" kind="relationship" relationship="viewControllers" id="H6q-gq-VhR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xrb-hI-uB3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4948.8549618320612" y="709.85915492957747"/>
         </scene>
+        <!--Help And Privacy Details View Controller-->
+        <scene sceneID="nGj-Lb-Uvu">
+            <objects>
+                <viewController id="FOY-41-O41" customClass="HelpAndPrivacyDetailsViewController" customModule="BillZzapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gbc-M6-vMP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hCg-lo-FvX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WDu-DX-y1E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8079" y="1361"/>
+        </scene>
+        <!--Budget Details View Controller-->
+        <scene sceneID="S6k-NQ-PzM">
+            <objects>
+                <viewController id="VrN-7V-89T" customClass="BudgetDetailsViewController" customModule="BillZzapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="euJ-kG-LrN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="iMg-tB-tJW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3y6-gi-bVC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8772" y="56"/>
+        </scene>
+        <!--Profile Details View Controller-->
+        <scene sceneID="N2Y-Y7-VSi">
+            <objects>
+                <viewController id="MJy-wr-aPg" customClass="ProfileDetailsViewController" customModule="BillZzapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EA-9u-4gc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8xX-F0-oqa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="faC-Al-kun"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t73-Ze-lds" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8079" y="56"/>
+        </scene>
+        <!--Notifications And Alerts Details View Controller-->
+        <scene sceneID="mEz-OS-gun">
+            <objects>
+                <viewController id="ftc-en-zhE" customClass="NotificationsAndAlertsDetailsViewController" customModule="BillZzapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1YP-Ib-7OU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Yfq-8L-mLf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="InL-Yr-NKF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9698.4732824427483" y="709.85915492957747"/>
+        </scene>
+        <!--Link Accounts Details View Controller-->
+        <scene sceneID="fjd-71-NzJ">
+            <objects>
+                <viewController id="YRC-ud-336" customClass="LinkAccountsDetailsViewController" customModule="BillZzapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mGd-zW-VWx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Svc-Pf-l9U"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pDj-lG-XEU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9005.3435114503809" y="709.85915492957747"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="Rgc-TB-UgA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QIG-Zg-ZvM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="nxi-gt-N3H"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z7z-wK-eaO">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FuM-Iq-TRG" kind="relationship" relationship="rootViewController" id="YnP-75-pXh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B6N-IK-2XV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7351.9083969465646" y="709.85915492957747"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Uu5-o7-0yE"/>
+        <segue reference="kVW-pM-EYu"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="0.circle" catalog="system" width="128" height="123"/>
@@ -1375,6 +1566,7 @@
         <image name="_tmp-63e6980199fe9_PSPI17" width="776" height="588"/>
         <image name="apple-logo-white" width="803" height="985"/>
         <image name="checkmark-256" width="256" height="256"/>
+        <image name="gear" catalog="system" width="128" height="122"/>
         <image name="hand" width="890" height="890"/>
         <image name="icons8-apple-tv-500" width="500" height="500"/>
         <image name="lock" width="79" height="105"/>
