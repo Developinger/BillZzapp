@@ -24,19 +24,6 @@
 		CEF6C8E8298D844300B7297A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEF6C8E7298D844300B7297A /* GoogleService-Info.plist */; };
 		CEF6C8EB298D85A900B7297A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CEF6C8EA298D85A900B7297A /* FirebaseAuth */; };
 		CEF6C8ED298D85A900B7297A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CEF6C8EC298D85A900B7297A /* FirebaseFirestore */; };
-		DC2F0A952A00119D006C1028 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F0A942A00119D006C1028 /* SettingsTableViewController.swift */; };
-		DC2F0A9A2A001B69006C1028 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F0A992A001B69006C1028 /* ProfileTableViewCell.swift */; };
-		DC2F0A9C2A001BFE006C1028 /* BudgetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F0A9B2A001BFE006C1028 /* BudgetTableViewCell.swift */; };
-		DC2F0A9E2A001C32006C1028 /* LinkAccountsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F0A9D2A001C32006C1028 /* LinkAccountsTableViewCell.swift */; };
-		DC2F0AA02A001C5E006C1028 /* NotificationsAndAlertsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F0A9F2A001C5E006C1028 /* NotificationsAndAlertsTableViewCell.swift */; };
-		DC2F0AA22A001C99006C1028 /* HelpAndPrivacyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F0AA12A001C99006C1028 /* HelpAndPrivacyTableViewCell.swift */; };
-		DC2F0AA42A001CBB006C1028 /* AboutOwnersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F0AA32A001CBB006C1028 /* AboutOwnersTableViewCell.swift */; };
-		DC40A5882A0428CA00E2CB0C /* ProfileDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC40A5872A0428CA00E2CB0C /* ProfileDetailsViewController.swift */; };
-		DC40A58A2A042A0E00E2CB0C /* BudgetDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC40A5892A042A0E00E2CB0C /* BudgetDetailsViewController.swift */; };
-		DC40A58C2A042B8A00E2CB0C /* LinkAccountsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC40A58B2A042B8A00E2CB0C /* LinkAccountsDetailsViewController.swift */; };
-		DC40A58E2A042BBD00E2CB0C /* NotificationsAndAlertsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC40A58D2A042BBD00E2CB0C /* NotificationsAndAlertsDetailsViewController.swift */; };
-		DC40A5902A042BF500E2CB0C /* HelpAndPrivacyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC40A58F2A042BF500E2CB0C /* HelpAndPrivacyDetailsViewController.swift */; };
-		DC40A5922A042C3A00E2CB0C /* AboutOwnerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC40A5912A042C3A00E2CB0C /* AboutOwnerDetailsViewController.swift */; };
 		DC82E69B29BBAD9E00F111C7 /* TipCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82E69A29BBAD9E00F111C7 /* TipCalculatorViewController.swift */; };
 		DCF79C5429FAEE4100C95BF5 /* BillSplitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF79C5329FAEE4100C95BF5 /* BillSplitterViewController.swift */; };
 /* End PBXBuildFile section */
@@ -64,19 +51,6 @@
 		CEA7B3B52968A8FA00C3F155 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		CECC8A3E29CB6DE60011B6B3 /* SubscriptionSelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionSelectionController.swift; sourceTree = "<group>"; };
 		CEF6C8E7298D844300B7297A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		DC2F0A942A00119D006C1028 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
-		DC2F0A992A001B69006C1028 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileTableViewCell.swift; path = BillZzapp/ProfileTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		DC2F0A9B2A001BFE006C1028 /* BudgetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BudgetTableViewCell.swift; path = BillZzapp/BudgetTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		DC2F0A9D2A001C32006C1028 /* LinkAccountsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LinkAccountsTableViewCell.swift; path = BillZzapp/LinkAccountsTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		DC2F0A9F2A001C5E006C1028 /* NotificationsAndAlertsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificationsAndAlertsTableViewCell.swift; path = BillZzapp/NotificationsAndAlertsTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		DC2F0AA12A001C99006C1028 /* HelpAndPrivacyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HelpAndPrivacyTableViewCell.swift; path = BillZzapp/HelpAndPrivacyTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		DC2F0AA32A001CBB006C1028 /* AboutOwnersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutOwnersTableViewCell.swift; path = BillZzapp/AboutOwnersTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		DC40A5872A0428CA00E2CB0C /* ProfileDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsViewController.swift; sourceTree = SOURCE_ROOT; };
-		DC40A5892A042A0E00E2CB0C /* BudgetDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BudgetDetailsViewController.swift; path = BillZzapp/BudgetDetailsViewController.swift; sourceTree = SOURCE_ROOT; };
-		DC40A58B2A042B8A00E2CB0C /* LinkAccountsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LinkAccountsDetailsViewController.swift; path = BillZzapp/LinkAccountsDetailsViewController.swift; sourceTree = SOURCE_ROOT; };
-		DC40A58D2A042BBD00E2CB0C /* NotificationsAndAlertsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsAndAlertsDetailsViewController.swift; sourceTree = "<group>"; };
-		DC40A58F2A042BF500E2CB0C /* HelpAndPrivacyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HelpAndPrivacyDetailsViewController.swift; path = BillZzapp/HelpAndPrivacyDetailsViewController.swift; sourceTree = SOURCE_ROOT; };
-		DC40A5912A042C3A00E2CB0C /* AboutOwnerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutOwnerDetailsViewController.swift; path = BillZzapp/AboutOwnerDetailsViewController.swift; sourceTree = SOURCE_ROOT; };
 		DC82E69A29BBAD9E00F111C7 /* TipCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorViewController.swift; sourceTree = "<group>"; };
 		DCE34E722991662300B95FA4 /* BillZzapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BillZzapp.entitlements; sourceTree = "<group>"; };
 		DCF79C5329FAEE4100C95BF5 /* BillSplitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillSplitterViewController.swift; sourceTree = "<group>"; };
@@ -115,14 +89,12 @@
 			isa = PBXGroup;
 			children = (
 				DCE34E722991662300B95FA4 /* BillZzapp.entitlements */,
+				CEA7B3A22968A8BC00C3F155 /* Font */,
 				CEF6C8EE298D8A9400B7297A /* ViewControllers */,
 				DC2F0A982A0015F7006C1028 /* Settings */,
-				CEA7B3A22968A8BC00C3F155 /* Font */,
+				CE60D4BE29689B8200BED7C1 /* Main.storyboard */,
 				CE60D4B829689B8200BED7C1 /* AppDelegate.swift */,
 				CE60D4BA29689B8200BED7C1 /* SceneDelegate.swift */,
-				CE60D4BE29689B8200BED7C1 /* Main.storyboard */,
-				DCF79C5329FAEE4100C95BF5 /* BillSplitterViewController.swift */,
-				DC82E69A29BBAD9E00F111C7 /* TipCalculatorViewController.swift */,
 				CE60D4C129689B8C00BED7C1 /* Assets.xcassets */,
 				CE60D4C329689B8C00BED7C1 /* LaunchScreen.storyboard */,
 				CE60D4C629689B8C00BED7C1 /* Info.plist */,
@@ -155,6 +127,8 @@
 			children = (
 				CECC8A3E29CB6DE60011B6B3 /* SubscriptionSelectionController.swift */,
 				CE60D4BC29689B8200BED7C1 /* ViewController.swift */,
+				DC82E69A29BBAD9E00F111C7 /* TipCalculatorViewController.swift */,
+				DCF79C5329FAEE4100C95BF5 /* BillSplitterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -162,19 +136,6 @@
 		DC2F0A982A0015F7006C1028 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				DC40A5912A042C3A00E2CB0C /* AboutOwnerDetailsViewController.swift */,
-				DC40A58F2A042BF500E2CB0C /* HelpAndPrivacyDetailsViewController.swift */,
-				DC40A58B2A042B8A00E2CB0C /* LinkAccountsDetailsViewController.swift */,
-				DC40A5892A042A0E00E2CB0C /* BudgetDetailsViewController.swift */,
-				DC40A5872A0428CA00E2CB0C /* ProfileDetailsViewController.swift */,
-				DC2F0AA32A001CBB006C1028 /* AboutOwnersTableViewCell.swift */,
-				DC2F0AA12A001C99006C1028 /* HelpAndPrivacyTableViewCell.swift */,
-				DC2F0A9F2A001C5E006C1028 /* NotificationsAndAlertsTableViewCell.swift */,
-				DC2F0A9D2A001C32006C1028 /* LinkAccountsTableViewCell.swift */,
-				DC2F0A9B2A001BFE006C1028 /* BudgetTableViewCell.swift */,
-				DC2F0A992A001B69006C1028 /* ProfileTableViewCell.swift */,
-				DC2F0A942A00119D006C1028 /* SettingsTableViewController.swift */,
-				DC40A58D2A042BBD00E2CB0C /* NotificationsAndAlertsDetailsViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -266,24 +227,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC82E69B29BBAD9E00F111C7 /* TipCalculatorViewController.swift in Sources */,
-				DC2F0A9A2A001B69006C1028 /* ProfileTableViewCell.swift in Sources */,
 				CE60D4BD29689B8200BED7C1 /* ViewController.swift in Sources */,
 				DCF79C5429FAEE4100C95BF5 /* BillSplitterViewController.swift in Sources */,
-				DC2F0AA02A001C5E006C1028 /* NotificationsAndAlertsTableViewCell.swift in Sources */,
-				DC40A58C2A042B8A00E2CB0C /* LinkAccountsDetailsViewController.swift in Sources */,
-				DC40A5922A042C3A00E2CB0C /* AboutOwnerDetailsViewController.swift in Sources */,
 				CE60D4B929689B8200BED7C1 /* AppDelegate.swift in Sources */,
-				DC2F0A9E2A001C32006C1028 /* LinkAccountsTableViewCell.swift in Sources */,
-				DC40A58E2A042BBD00E2CB0C /* NotificationsAndAlertsDetailsViewController.swift in Sources */,
 				CE60D4BB29689B8200BED7C1 /* SceneDelegate.swift in Sources */,
-				DC40A58A2A042A0E00E2CB0C /* BudgetDetailsViewController.swift in Sources */,
 				CECC8A3F29CB6DE60011B6B3 /* SubscriptionSelectionController.swift in Sources */,
-				DC40A5882A0428CA00E2CB0C /* ProfileDetailsViewController.swift in Sources */,
-				DC2F0AA42A001CBB006C1028 /* AboutOwnersTableViewCell.swift in Sources */,
-				DC2F0A952A00119D006C1028 /* SettingsTableViewController.swift in Sources */,
-				DC40A5902A042BF500E2CB0C /* HelpAndPrivacyDetailsViewController.swift in Sources */,
-				DC2F0A9C2A001BFE006C1028 /* BudgetTableViewCell.swift in Sources */,
-				DC2F0AA22A001C99006C1028 /* HelpAndPrivacyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

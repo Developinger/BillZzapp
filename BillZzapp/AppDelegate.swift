@@ -12,11 +12,10 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        FirebaseApp.configure()
-        Auth.auth().useEmulator(withHost: "localhost", port: 9099)
+      
         return true
     }
     // MARK: UISceneSession Lifecycle
