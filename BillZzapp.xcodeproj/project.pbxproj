@@ -26,6 +26,7 @@
 		CEF6C8ED298D85A900B7297A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CEF6C8EC298D85A900B7297A /* FirebaseFirestore */; };
 		DC82E69B29BBAD9E00F111C7 /* TipCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82E69A29BBAD9E00F111C7 /* TipCalculatorViewController.swift */; };
 		DC8C84E82A1542590008DFE2 /* BankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8C84E72A1542590008DFE2 /* BankViewController.swift */; };
+		DC8C84EA2A1552340008DFE2 /* PersonalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8C84E92A1552340008DFE2 /* PersonalInformationViewController.swift */; };
 		DCF79C5429FAEE4100C95BF5 /* BillSplitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF79C5329FAEE4100C95BF5 /* BillSplitterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		CEF6C8E7298D844300B7297A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DC82E69A29BBAD9E00F111C7 /* TipCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorViewController.swift; sourceTree = "<group>"; };
 		DC8C84E72A1542590008DFE2 /* BankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankViewController.swift; sourceTree = "<group>"; };
+		DC8C84E92A1552340008DFE2 /* PersonalInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonalInformationViewController.swift; path = "../../Library/Developer/Xcode/DerivedData/BillZzapp-ddasstmdiwqpjnfddmsyiiylclyt/SourcePackages/checkouts/swift-protobuf/PersonalInformationViewController.swift"; sourceTree = "<group>"; };
 		DCE34E722991662300B95FA4 /* BillZzapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BillZzapp.entitlements; sourceTree = "<group>"; };
 		DCF79C5329FAEE4100C95BF5 /* BillSplitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillSplitterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +76,7 @@
 		CE60D4AC29689B8200BED7C1 = {
 			isa = PBXGroup;
 			children = (
+				DC8C84E92A1552340008DFE2 /* PersonalInformationViewController.swift */,
 				CE60D4B729689B8200BED7C1 /* BillZzapp */,
 				CE60D4B629689B8200BED7C1 /* Products */,
 			);
@@ -232,6 +235,7 @@
 				DC8C84E82A1542590008DFE2 /* BankViewController.swift in Sources */,
 				DC82E69B29BBAD9E00F111C7 /* TipCalculatorViewController.swift in Sources */,
 				CE60D4BD29689B8200BED7C1 /* ViewController.swift in Sources */,
+				DC8C84EA2A1552340008DFE2 /* PersonalInformationViewController.swift in Sources */,
 				DCF79C5429FAEE4100C95BF5 /* BillSplitterViewController.swift in Sources */,
 				CE60D4B929689B8200BED7C1 /* AppDelegate.swift in Sources */,
 				CE60D4BB29689B8200BED7C1 /* SceneDelegate.swift in Sources */,
