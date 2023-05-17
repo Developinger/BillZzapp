@@ -25,6 +25,7 @@
 		CEF6C8EB298D85A900B7297A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CEF6C8EA298D85A900B7297A /* FirebaseAuth */; };
 		CEF6C8ED298D85A900B7297A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CEF6C8EC298D85A900B7297A /* FirebaseFirestore */; };
 		DC82E69B29BBAD9E00F111C7 /* TipCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82E69A29BBAD9E00F111C7 /* TipCalculatorViewController.swift */; };
+		DC8C84E82A1542590008DFE2 /* BankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8C84E72A1542590008DFE2 /* BankViewController.swift */; };
 		DCF79C5429FAEE4100C95BF5 /* BillSplitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF79C5329FAEE4100C95BF5 /* BillSplitterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		CECC8A3E29CB6DE60011B6B3 /* SubscriptionSelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionSelectionController.swift; sourceTree = "<group>"; };
 		CEF6C8E7298D844300B7297A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DC82E69A29BBAD9E00F111C7 /* TipCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorViewController.swift; sourceTree = "<group>"; };
+		DC8C84E72A1542590008DFE2 /* BankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankViewController.swift; sourceTree = "<group>"; };
 		DCE34E722991662300B95FA4 /* BillZzapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BillZzapp.entitlements; sourceTree = "<group>"; };
 		DCF79C5329FAEE4100C95BF5 /* BillSplitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillSplitterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +127,7 @@
 		CEF6C8EE298D8A9400B7297A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				DC8C84E72A1542590008DFE2 /* BankViewController.swift */,
 				CECC8A3E29CB6DE60011B6B3 /* SubscriptionSelectionController.swift */,
 				CE60D4BC29689B8200BED7C1 /* ViewController.swift */,
 				DC82E69A29BBAD9E00F111C7 /* TipCalculatorViewController.swift */,
@@ -226,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8C84E82A1542590008DFE2 /* BankViewController.swift in Sources */,
 				DC82E69B29BBAD9E00F111C7 /* TipCalculatorViewController.swift in Sources */,
 				CE60D4BD29689B8200BED7C1 /* ViewController.swift in Sources */,
 				DCF79C5429FAEE4100C95BF5 /* BillSplitterViewController.swift in Sources */,
